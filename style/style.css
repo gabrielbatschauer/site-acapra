@@ -9,3 +9,7 @@ h1 {
   text-align: center;
   margin-top: 20px;
 }
+nav {
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+}
