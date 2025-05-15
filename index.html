@@ -11,21 +11,97 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+      <div
+        class="container-fluid px-4 d-flex justify-content-between align-items-center"
+      >
+        <!-- Logo -->
         <a class="navbar-brand" href="#">
-          <img
-            src="img/logoRoxa.svg"
-            alt="Logo"
-            width="40"
-            height="auto"
-            class="d-inline-block align-text-top"
-          />
+          <img src="img/logoRoxa.svg" alt="Logo" width="50" />
+          <!-- Substitua com o caminho real -->
         </a>
+
+        <!-- Tela Admin + Minha Conta -->
+        <div class="d-flex align-items-center">
+          <span class="me-3 text-muted small">Tela Admin</span>
+          <div class="vr mx-2 d-none d-md-block"></div>
+          <button class="btn btn-conta-header rounded-pill px-3 py-1">
+            <img src="img/user.svg" alt="User" width="22" /> Minha Conta
+          </button>
+        </div>
       </div>
     </nav>
+
+    <!-- Menu Navbar com Offcanvas -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid px-4">
+        <!-- Botão offcanvas (hamburger) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu em telas grandes -->
+        <div
+          class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Adote ou Colabore</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Cachorros</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Gatos e Utilitários</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Outros tipos de PET</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Fechar"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav text-black">
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Adote ou Colabore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Cachorros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Gatos e Utilitários</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="#">Outros tipos de PET</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <h1>ACAPRA</h1>
 

@@ -1,15 +1,33 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(48, 48, 48);
   margin: 0;
   padding: 0;
 }
-h1 {
-  color: white;
-  text-align: center;
-  margin-top: 20px;
+.navbar-custom {
+  background-color: #4b3f75; /* Roxo */
 }
-nav {
-  background-color: rgb(30, 30, 30);
-  padding: 10px;
+
+.nav-link {
+  color: white !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+}
+.nav-link:hover {
+  color: #d1c4e9 !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn-conta-header {
+  background-color: #4b3f75 !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+.btn-conta-header:hover {
+  background-color: #3a2e5b !important;
 }
