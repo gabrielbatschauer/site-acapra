@@ -4,12 +4,15 @@ body {
   padding: 0;
 }
 .navbar-custom {
-  background-color: #4b3f75; /* Roxo */
+  background-color: #4b3f75;
+}
+.navbar-light {
+  padding: 0 100px !important;
 }
 
 .nav-link {
   color: white !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   text-decoration: none !important;
 }
 .nav-link:hover {
