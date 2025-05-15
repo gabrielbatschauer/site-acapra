@@ -18,55 +18,73 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+    <nav class="navbar px-4 px-lg-5 bg-white border-bottom shadow-sm">
       <div
-        class="container-fluid px-4 d-flex justify-content-between align-items-center"
+        class="container-fluid px-lg-4 d-flex justify-content-between align-items-center"
       >
         <!-- Logo -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="img/logoRoxa.svg" alt="Logo" width="50" />
         </a>
 
         <!-- Tela Admin + Minha Conta -->
-        <div class="d-flex align-items-center">
-          <span class="me-3 text-muted small">Tela Admin</span>
+        <div class="d-none d-lg-flex align-items-center">
+          <button class="btn text-muted">Tela Admin</button>
           <div class="vr mx-2 d-none d-md-block"></div>
-          <button class="btn btn-conta-header rounded-pill px-3 py-1">
-            <img src="img/user.svg" alt="User" width="22" /> Minha Conta
+          <button
+            class="btn btn-conta bg-purple text-white fw-medium rounded-pill px-3 py-1"
+          >
+            <img src="img/icons/user.svg" alt="User" width="22" /> Minha Conta
           </button>
         </div>
-      </div>
-    </nav>
 
-    <!-- Menu Navbar com Offcanvas -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container-fluid px-4">
-        <!-- Botão offcanvas -->
+        <!-- Botão Offcanvas -->
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-lg-none d-flex"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+      </div>
+    </nav>
 
+    <!-- Menu Navbar com Offcanvas -->
+    <nav class="navbar navbar-expand-lg bg-purple">
+      <div class="container-fluid px-4">
         <!-- Menu em telas grandes -->
         <div
           class="collapse navbar-collapse justify-content-center d-none d-lg-flex"
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Adote ou Colabore</a>
+              <a
+                class="text-white fw-medium text-decoration-none nav-link"
+                href="catalogo.html"
+                >Adote ou Colabore</a
+              >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Cachorros</a>
+              <a
+                class="text-white fw-medium text-decoration-none nav-link"
+                href="catalogo.html"
+                >Cachorros</a
+              >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Gatos e Utilitários</a>
+              <a
+                class="text-white fw-medium text-decoration-none nav-link"
+                href="catalogo.html"
+                >Gatos e Utilitários</a
+              >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link" href="#">Outros tipos de PET</a>
+              <a
+                class="text-white fw-medium text-decoration-none nav-link"
+                href="catalogo.html"
+                >Outros tipos de PET</a
+              >
             </li>
           </ul>
         </div>
@@ -84,25 +102,183 @@
           aria-label="Fechar"
         ></button>
       </div>
-      <div class="offcanvas-body">
+      <div class="offcanvas-body d-flex flex-column">
         <ul class="navbar-nav text-black">
-          <li class="nav-item">
-            <a class="nav-link text-black" href="#">Adote ou Colabore</a>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="catalogo.html">Adote ou Colabore</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="#">Cachorros</a>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="catalogo.html">Cachorros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="#">Gatos e Utilitários</a>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="catalogo.html">Gatos e Utilitários</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-black" href="#">Outros tipos de PET</a>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="catalogo.html">Outros tipos de PET</a>
           </li>
         </ul>
+        <div
+          class="mt-auto d-flex justify-content-center align-items-center pt-4"
+        >
+          <button class="btn text-muted">Tela Admin</button>
+          <button class="btn btn-conta-header rounded-pill px-3 py-1">
+            <img src="img/icons/user.svg" alt="User" width="22" /> Minha Conta
+          </button>
+        </div>
       </div>
     </div>
 
-    <h1>ACAPRA</h1>
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Ícones -->
+    <div class="container icon-row">
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-2">
+          <a
+            class="card icon-card h-100 w-100 text-decoration-none"
+            href="catalogo.html"
+          >
+            <img
+              src="img/icons/cachorro-preto.png"
+              class="m-auto"
+              alt="Cachorros"
+            />
+            <p>Cachorros</p>
+          </a>
+        </div>
+
+        <div class="col-6 col-sm-2">
+          <a
+            class="card icon-card h-100 w-100 text-decoration-none"
+            href="catalogo.html"
+          >
+            <img src="img/icons/gato-preto.png" class="m-auto" alt="Gatos" />
+            <p>Gatos</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-2">
+          <a
+            class="card icon-card h-100 w-100 text-decoration-none"
+            href="catalogo.html"
+          >
+            <img
+              src="img/icons/pata-preta.png"
+              class="m-auto"
+              alt="Outros Animais"
+            />
+            <p>Outros Animais</p>
+          </a>
+        </div>
+        <div class="col-6 col-sm-2">
+          <a
+            class="card icon-card h-100 w-100 text-decoration-none"
+            href="catalogo.html"
+          >
+            <img
+              src="https://img.icons8.com/ios-filled/100/000000/home.png"
+              class="m-auto"
+              alt="Lares Temporários"
+            />
+            <p>Lares Temporários</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-pets text-center my-5">
+      <h1 class="text-title">Ache o seu novo companheiro</h1>
+      <p class="text-subtitle fw-medium">
+        Procure PETS e faça o seu dia a dia e o dele melhor!
+      </p>
+
+      <div
+        class="d-flex justify-content-center align-items-center gap-3 bg-light"
+      >
+        <div class="card card-custom">
+          <img
+            src="img/cachorros/cachorro-pinpao.png"
+            class="card-img-top"
+            alt="Pinpão"
+          />
+          <div class="card-footer-custom">
+            <h4 class="text-subtitle fw-medium m-0">Pinpão</h4>
+          </div>
+        </div>
+
+        <div class="card card-custom">
+          <img
+            src="img/cachorros/cachorro-bela.png"
+            class="card-img-top"
+            alt="Bela"
+          />
+          <div class="card-footer-custom">
+            <h4 class="text-subtitle fw-medium m-0">Bela</h4>
+          </div>
+        </div>
+
+        <div class="card card-custom">
+          <img
+            src="img/cachorros/cachorro-zeus.png"
+            class="card-img-top"
+            alt="Zeus"
+          />
+          <div class="card-footer-custom">
+            <h4 class="text-subtitle fw-medium m-0">Zeus</h4>
+          </div>
+        </div>
+
+        <div class="card card-custom">
+          <img
+            src="img/cachorros/cachorro-leandro.png"
+            class="card-img-top"
+            alt="Leandro"
+          />
+          <div class="card-footer-custom">
+            <h4 class="text-subtitle fw-medium m-0">Leandro</h4>
+          </div>
+        </div>
+
+        <div class="card card-custom">
+          <img src="img/pinpãoCard.jpg" class="card-img-top" alt="Pinpão" />
+          <div class="card-footer-custom">
+            <h4 class="text-subtitle fw-medium m-0">Ver mais fazer</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-4 bg-gray p-5">
+      <h1 class="text-title">Planejando adotar um PET?</h1>
+      <div class="d-flex justify-content-around my-5">
+        <div class="w-25">
+          <img src="img/icons/cachorroLinha.svg" style="width: 50px" alt="" />
+          <h2 class="text-title">Localize o melhor tipo de PET para você!</h2>
+          <p class="text-subtitle fw-medium">
+            Encontre o melhor tipo de PET para você, seja para um modelo de
+            estadia ou de vida!
+          </p>
+        </div>
+        <div class="w-25">
+          <img src="img/icons/dog-seatting.svg" style="width: 50px" alt="" />
+          <h2 class="text-title">Qual a idade do cachorro em anos humanos?</h2>
+          <p class="text-subtitle fw-medium">
+            Aprenda a traduzir anos caninos para anos humanos só por diversão, e
+            vice-versa. Finalmente responda quantos anos seu cão tem!
+          </p>
+        </div>
+        <div class="w-25">
+          <img src="img/icons/bonecos.svg" style="width: 50px" alt="" />
+          <h2 class="text-title">
+            Perguntas frequentes sobre adoção de animais...
+          </h2>
+          <p class="text-subtitle fw-medium">
+            Obtenha respostas para todas as perguntas que você não pensou sobre
+            sua adoção.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"

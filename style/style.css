@@ -3,22 +3,41 @@ body {
   margin: 0;
   padding: 0;
 }
-.navbar-custom {
-  background-color: #4b3f75;
-}
-.navbar-light {
-  padding: 0 100px !important;
+
+/* Cores e tamanhos padrões */
+.bg-purple {
+  background-color: #4b3f75 !important;
 }
 
-.nav-link {
-  color: white !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
+.text-title {
+  color: #4b3f75 !important;
+}
+.text-subtitle {
+  color: #7874a4 !important;
+}
+.bg-gray {
+  background-color: #d9d9d9 !important;
+}
+h1 {
+  font-size: 40px !important;
+}
+h2 {
+  font-size: 20px !important;
+}
+h4 {
+  font-size: 16px !important;
+}
+p {
+  font-size: 16px !important;
+}
+
+/* Navbar */
+.navbar-light {
+  padding: 0 100px !important;
 }
 .nav-link:hover {
   color: #d1c4e9 !important;
 }
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active {
@@ -26,11 +45,48 @@ body {
   outline: none !important;
   box-shadow: none !important;
 }
-.btn-conta-header {
-  background-color: #4b3f75 !important;
-  color: white !important;
-  font-weight: 500 !important;
+.btn-conta:hover {
+  background-color: #555086 !important;
 }
-.btn-conta-header:hover {
-  background-color: #3a2e5b !important;
+
+/* Banner com 4 opções */
+.banner {
+  background: url("../img/banner.jpg") no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  position: relative;
+}
+.icon-card {
+  height: 100%;
+  text-align: center;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.icon-card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.icon-row {
+  margin-top: -50px;
+  z-index: 10;
+  position: relative;
+  color: #555086;
+}
+
+/* Ache o seu novo companheiro */
+.card-img-top {
+  object-fit: cover;
+  height: 220px;
+}
+.card-footer-custom {
+  background-color: #ffffff;
+  border-top: none;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin-top: -20px;
+  padding-top: 20px;
+  height: 60px;
 }
