@@ -19,12 +19,91 @@
 
    <div class="formulario">
 
-        <label for="exampleFormControlInput1" class="form-label">Qual o seu nome completo?</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Teste">
+        <label for="nome" class="form-label">Qual o seu nome completo?</label>
+            <input type="text" class="form-control" id="nome" placeholder=" Escreva seu nome">
+
+        <label for="telefone" class="form-label">Qual o seu telefone para contato?</label>
+            <input type="text" class="form-control" id="telefone" placeholder=" (99) 99999 - 9999">
+
+        <label for="interesse" class="form-label">Qual animal você tem interesse em adotar?</label>
+            <input class="form-control" list="datalistOptions" id="interesse" placeholder=" Selecione...">
+            <datalist id="datalistOptions">
+            <option value="Pinpão">
+            <option value="Bela">
+            <option value="Zeus">
+            <option value="Leandro">
+            <option value="Mel">
+            <option value="Nuna">
+            <option value="Pipolo">
+            </option>
+            </datalist>
+
+        <label for="idade" class="form-label">Qual a sua idade? *Apenas maiores de idade devem responder</label>
+            <input type="text" class="form-control" id="idade" placeholder=" ** anos">
+
+        <label for="concordam" class="form-label">Todos da sua residência, concordam com a adoção?</label>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+            <label class="form-check-label" for="radioDefault1">
+            Sim
+            </label>
+            </div>
+            <div class="form-check">
+            <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+            <label class="form-check-label" for="radioDefault2">
+            Não
+            </label>
+            </div>
+
+        <label for="possuiAnimais" class="form-label">Você tem outros animais? Se sim, quantos e quais?</label>
+            <input type="text" class="form-control" id="possuiAnimais">
+
+        <label for="vacinados" class="form-label">São castrados e vacinados? *Desconsiderar caso não possui animais</label>
+            <div class="form-check-vacinado">
+            <input class="form-check-input" type="radio" name="radioVacina" id="radiovacina1">
+            <label class="form-check-label" for="radiovacina1">
+                Sim
+            </label>
+            </div>
+            <div class="form-check-vacinado">
+            <input class="form-check-input" type="radio" name="radioVacina" id="radiovacina2" checked>
+            <label class="form-check-label" for="radiovacina2">
+                Não
+            </label>
+            </div>
+
+        <label for="residencia" class="form-label">Você mora em casa ou apartamento? Próprio ou alugado?</label>
+            <input type="text" class="form-control" id="residencia">
+
+        <label for="telas" class="form-label">A sua residência tem telas?</label>
+            <div class="form-check-telas">
+            <input class="form-check-input" type="radio" name="radioTelas" id="radiotelas1">
+            <label class="form-check-label" for="radiotelas1">
+                Sim
+            </label>
+            </div>
+            <div class="form-check-telas">
+            <input class="form-check-input" type="radio" name="radioTelas" id="radiotelas2" checked>
+            <label class="form-check-label" for="radiotelas2">
+                Não
+            </label>
+            </div>
+        
+        <label for="passeio" class="form-label">Você esta disposto a dar voltas ou liberar acesso externo ao seu PET?</label>
+            <div class="form-check-passeio">
+            <input class="form-check-input" type="radio" name="radioPasseio" id="radiopasseio1">
+            <label class="form-check-label" for="radiopasseio1">
+                Sim
+            </label>
+            </div>
+            <div class="form-check-passeio">
+            <input class="form-check-input" type="radio" name="radioPasseio" id="radiopasseio2" checked>
+            <label class="form-check-label" for="radiopasseio2">
+                Não
+            </label>
+            </div>
 
    </div>
-
-
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
