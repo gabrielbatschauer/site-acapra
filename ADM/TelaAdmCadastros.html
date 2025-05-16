@@ -23,11 +23,11 @@
    <!-- Cabeçalho -->
    <header class="flex items-center justify-between bg-gray-100 border-b border-gray-400 px-4 py-2">
     <div class="flex items-center space-x-2">
-     <img height="85" src="../img/logo-acapra-roxo.png" width="40"/>
+     <img height="85" src="/img/logoRoxa.svg" width="40"/>
     </div>
     <button class="flex items-center space-x-2 bg-purple-700 text-white text-xs font-semibold rounded-full px-3 py-1">
      <span class="relative inline-block w-5 h-3 bg-gray-300 rounded-full">
-      <span class="absolute left-0 top-0.5 w-4 h-4 bg-white rounded-full shadow-md transform translate-x-5">
+      <span class="absolute left-0 top-0.5 w-4 h-4 rounded-full shadow-md transform translate-x-5">
       </span>
      </span>
      <span>
@@ -41,14 +41,14 @@
      <div class="bg-gray-900 font-bold text-sm py-3 px-4 border-b border-gray-700">
       Menu
      </div>
-     <a class="flex items-center space-x-2 px-4 py-3 hover:bg-gray-700 bg-gray-600 text-gray-300" href="#">
+     <a class="flex items-center space-x-2 px-4 py-3 bg-gray-700 hover:bg-gray-600 text-gray-300" href="#">
       <i class="fas fa-home text-gray-400">
       </i>
       <span class="text-sm">
        Início
       </span>
      </a>
-     <a class="flex items-center space-x-2 px-4 py-3 bg-gray-700 hover:text-gray-300 text-sm" href="#">
+     <a class="flex items-center space-x-2 px-4 py-3 hover:bg-gray-700 text-gray-300 text-sm" href="#">
       <i class="fas fa-list-ul text-gray-400">
       </i>
       <span>
@@ -56,8 +56,50 @@
       </span>
      </a>
     </nav>
-    <!-- Formulários -->
+    <!-- Cadastros -->
     <main class="flex-1 p-6 overflow-auto">
+     <section>
+      <h2 class="text-gray-900 text-base mb-3 font-normal">
+       Pets
+      </h2>
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-6 sm:space-y-0 sm:space-x-6 max-w-3xl">
+       <div class="flex flex-col items-center space-y-1 w-1/3">
+        <img class="w-10 h-10" height="40" src="../img/icons/pata-preta.png" width="40"/>
+        <span class="text-xs text-gray-900 font-normal">
+         Total Cadastrados
+        </span>
+        <span class="text-xs text-gray-900 font-normal">
+         12
+        </span>
+       </div>
+       <div class="flex flex-col items-center space-y-1 w-1/3">
+        <img alt="Black dog silhouette icon" class="w-10 h-10" height="40" src="../img/icons/cachorro-preto.png" width="40"/>
+        <span class="text-xs text-gray-900 font-normal">
+         Cachorros Cadastrados
+        </span>
+        <span class="text-xs text-gray-900 font-normal">
+         8
+        </span>
+       </div>
+       <div class="flex flex-col items-center space-y-1 w-1/3">
+        <img class="w-10 h-10" height="40" src="../img/icons/gato-preto.png" width="40"/>
+        <span class="text-xs text-gray-900 font-normal">
+         Gatos Cadastrados
+        </span>
+        <span class="text-xs text-gray-900 font-normal">
+         4
+        </span>
+       </div>
+       <div class="flex space-x-4 justify-center sm:justify-end mt-4 sm:mt-0 w-full sm:w-auto">
+        <button class="bg-purple-700 text-white text-xs font-semibold rounded-md px-5 py-1.5">
+         Ver cadastros
+        </button>
+        <button class="bg-purple-700 text-white text-xs font-semibold rounded-md px-5 py-1.5">
+         Novo Pet
+        </button>
+       </div>
+      </div>
+     </section>
      <section class="mt-8 max-w-4xl">
       <h2 class="text-gray-900 text-base mb-3 font-normal">
        Formulários
@@ -76,10 +118,10 @@
            Telefone
           </th>
           <th class="border border-gray-400 px-1 py-1 text-left">
-           Idade
+           Pet
           </th>
           <th class="border border-gray-400 px-1 py-1 text-left">
-           Raça
+           Status
           </th>
           <th class="border border-gray-400 px-1 py-1 text-left">
            Ações
@@ -92,23 +134,20 @@
            18/03/2025
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           Nome do Animal
+           Jorge da Silva
           </td>
           <td class="border border-gray-400 px-1 py-1">
            (47) 99999-9999
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           10
+           Pimpão
           </td>
           <td class="border border-gray-400 px-1 py-1 text-green-600">
-           Shitzu
+           Entrega
           </td>
           <td class="border border-gray-400 px-1 py-1 flex space-x-1">
            <button class="bg-green-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            👁️
-           </button>
-           <button class="bg-yellow-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            ✏️
+            ✔
            </button>
            <button class="bg-red-600 text-white rounded text-[10px] px-1.5 py-0.5">
             ✖
@@ -120,23 +159,20 @@
            19/03/2025
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           Nome do Animal
+           Ricardo Almeida
           </td>
           <td class="border border-gray-400 px-1 py-1">
            (47) 99999-9999
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           6
+           Bela
           </td>
-          <td class="border border-gray-400 px-1 py-1 text-green-600">
-           Vira - Lata Caramelo
+          <td class="border border-gray-400 px-1 py-1 text-red-600">
+           Aguardando
           </td>
           <td class="border border-gray-400 px-1 py-1 flex space-x-1">
            <button class="bg-green-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            👁️
-           </button>
-           <button class="bg-yellow-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            ✏️
+            ✔
            </button>
            <button class="bg-red-600 text-white rounded text-[10px] px-1.5 py-0.5">
             ✖
@@ -145,26 +181,23 @@
          </tr>
          <tr class="border border-gray-400">
           <td class="border border-gray-400 px-1 py-1">
-           10/03/2025
+           20/03/2025
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           Nome do Animal
+           Tiago Silva
           </td>
           <td class="border border-gray-400 px-1 py-1">
            (47) 99999-9999
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           3
+           Zeus
           </td>
-          <td class="border border-gray-400 px-1 py-1 text-green-600">
-           Pastor Alemão
+          <td class="border border-gray-400 px-1 py-1 text-red-600">
+           Aguardando
           </td>
           <td class="border border-gray-400 px-1 py-1 flex space-x-1">
            <button class="bg-green-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            👁️
-           </button>
-           <button class="bg-yellow-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            ✏️
+            ✔
            </button>
            <button class="bg-red-600 text-white rounded text-[10px] px-1.5 py-0.5">
             ✖
@@ -176,23 +209,20 @@
            21/03/2025
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           Nome do Animal
+           Guilherme Costa
           </td>
           <td class="border border-gray-400 px-1 py-1">
            (47) 99999-9999
           </td>
           <td class="border border-gray-400 px-1 py-1">
-           2
+           Pimpão
           </td>
-          <td class="border border-gray-400 px-1 py-1 text-green-600">
-           Chihuahua
+          <td class="border border-gray-400 px-1 py-1 text-red-600">
+           Aguardando
           </td>
           <td class="border border-gray-400 px-1 py-1 flex space-x-1">
            <button class="bg-green-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            👁️
-           </button>
-           <button class="bg-yellow-600 text-white rounded text-[10px] px-1.5 py-0.5">
-            ✏️
+            ✔
            </button>
            <button class="bg-red-600 text-white rounded text-[10px] px-1.5 py-0.5">
             ✖
